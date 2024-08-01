@@ -88,11 +88,11 @@ NOTE: do not use the Eclipse EE9 preview, you will need the Jakarta EE Full & We
 
 #### Download and Install JDK
 
-  - Install an OpenJDK 11 version from [AdoptOpenJDK](https://adoptopenjdk.net/installation.html?variant=openjdk11&jvmVariant=hotspot#x86-32_win-jdk) (or an alternative OpenJDK of your choice)
+  - Install an OpenJDK 17 version from [AdoptOpenJDK](https://adoptium.net/temurin/releases/?package=jdk&version=17) (or an alternative OpenJDK of your choice)
 
 ## 3.3. Install and Configure Wildfly Server
 
-We need an application server to be able to access the application through our browser. For this we will demonstrate using Red Hat's Wildfly application server plugin. Skyve apps can be deployed on recent versions of Wildfly (20+).
+We need an application server to be able to access the application through our browser. For this we will demonstrate using Red Hat's Wildfly application server plugin. Skyve apps can be deployed on recent versions of Wildfly (27+).
 
 ### Install Wildfly Server
 
@@ -128,37 +128,36 @@ After JBoss Tools is installed properly, follow these steps to install WildFly S
 
 1. Once Eclipse is opened, right-click under the Project Explorer tab and highlight New, then from the pop-out, click on Other
 
-   ![new-other](../assets/images/project-new-other.PNG "new-other")
+   ![new-other](../assets/images/wildfly/1.png "new-other")
    
 2. Enter text `server` in the `type filter text` field, select `Server` and click the Next button.
 
-   ![server](../doc_src_img/chapter3/6_2.jpg "server")
+   ![server](../assets/images/wildfly/2.png "server")
 
-2. Select the WildFly version you wish to work with and click Next (Skyve currently supports versions up to 26)
+2. Select the WildFly version you wish to work with and click Next (Skyve currently supports versions 27+)
 
-   ![select server](../assets/images/define-a-new-server-wildfly21.png "select server")
+   ![select server](../assets/images/wildfly/3.png "select server")
 
 3. Click Next again
 
-   ![select Next](../assets/images/define-a-new-server-wildfly21_2.png "select Next")
+   ![select Next](../assets/images/wildfly/4.png "select Next")
 
 4. Click on the Download and install runtime link
 
-   ![install runtime](../assets/images/define-a-new-server-wildfly21_3.png "install runtime")
+   ![install runtime](../assets/images/wildfly/5.png "install runtime")
 
 5. Select the latest version of WildFly, then click Next
 
-   ![select runtime](../assets/images/define-a-new-server-wildfly21_4.png "select runtime")
+   ![select runtime](../assets/images/wildfly/6.png "select runtime")
 
 6. Once you have read the terms of the licence agreement, check the box to accept the terms, and click Next
 
-   ![accept agreement](../assets/images/define-a-new-server-wildfly21_5.png "accept agreement")
+   ![accept agreement](../assets/images/wildfly/7.png "accept agreement")
 
-7.  Finally, select the path for where you wish your download and install locations to be found, then click Finish to complete the installation
+7. Finally, select the path for where you wish your download and install locations to be found, select the appropriate runtime JRE and then click `Finish` to complete the installation
 
-    ![select path](../assets/images/define-a-new-server-wildfly21_6.png "select path")
-
-    ![path](../assets/images/define-a-new-server-wildfly21_7.png "path")
+   ![download-runtime](../assets/images/wildfly/8.png "download-runtime")
+   ![runtime-jre](../assets/images/wildfly/9.png "runtime-jre")
 
 8.  Wait for Eclipse to complete the download and installation process before moving on to the next step
 
